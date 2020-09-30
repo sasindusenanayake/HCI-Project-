@@ -4,6 +4,7 @@ import './App.css';
 import Footer from'./components/footer/footer';
 import Header from './components/Header/header'
 import Driveaway from './components/pages/driveawaygates'
+import Moderndriveaway from './components/pages/moderngates'
 import {
     BrowserRouter as Router,
     Switch,
@@ -21,7 +22,7 @@ function App() {
         <Switch>
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
           <Route path="/cart"></Route>
-          <Route path="/gates"></Route>
+          <Route path="/moderndrivawaygates"><Moderndriveaway></Moderndriveaway></Route>
         </Switch>
       </Router>
     <br></br>
