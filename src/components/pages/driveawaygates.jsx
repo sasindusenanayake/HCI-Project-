@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '.././pages/driveawaystyle.css'
+import Cards from'../images/driveawayimages'
 
 export default class driveawaygates extends Component {
     render() {
@@ -27,6 +28,10 @@ export default class driveawaygates extends Component {
                     </div>.
                 </div>
                 </div>
+                <br></br>
+                    <h2>Click On Images For More Information</h2>
+                <br></br>
+                <Cards></Cards>
         
             </div>
             </div>
