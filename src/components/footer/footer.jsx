@@ -12,7 +12,7 @@ export default class footer extends Component {
               <div className="col-md-3 col-sm-6">
                 {/*Column1*/}
                 <div className="footer-pad">
-                  <h4>Heading 1</h4>
+                  <h4>Contact US</h4>
                   <ul className="list-unstyled">
                     <li><a href="#" /></li>
                     <li><a href="#">Payment Center</a></li>
@@ -26,7 +26,7 @@ export default class footer extends Component {
               <div className="col-md-3 col-sm-6">
                 {/*Column1*/}
                 <div className="footer-pad">
-                  <h4>Heading 2</h4>
+                  <h4>About Us</h4>
                   <ul className="list-unstyled">
                     <li><a href="#">Website Tutorial</a></li>
                     <li><a href="#">Accessibility</a></li>
@@ -40,7 +40,7 @@ export default class footer extends Component {
               <div className="col-md-3 col-sm-6">
                 {/*Column1*/}
                 <div className="footer-pad">
-                  <h4>Heading 3</h4>
+                  <h4>Links</h4>
                   <ul className="list-unstyled">
                     <li><a href="#">Parks and Recreation</a></li>
                     <li><a href="#">Public Works</a></li>
@@ -63,7 +63,7 @@ export default class footer extends Component {
             </div>
             <div className="row">
               <div className="col-md-12 copy">
-                <p className="text-center">© Copyright 2018 - Company Name.  All rights reserved.</p>
+                <p className="text-center">© Copyright 2020 - Gates&Fences.  All rights reserved.</p>
               </div>
             </div>
           </div>

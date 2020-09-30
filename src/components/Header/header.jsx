@@ -26,7 +26,7 @@ export default class header extends Component {
                     Gates
                   </a>
                   <ul className="dropdown-menu main-menubox" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a className="dropdown-item" href="#">Drivaaway Gates</a></li>
+                    <li><a className="dropdown-item" href="/drivawaygates">Drivaaway Gates</a></li>
                     <li><a className="dropdown-item" href="#">Privacy Gates</a></li>       
                   </ul>
                 </li>
