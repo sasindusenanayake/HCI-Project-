@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
 import './cart.css'
+import Image from '../../asserts/gatesiamges/1.jpg'
+import Image2 from '../../asserts/gatesiamges/2.jpg'
+import Image3 from '../../asserts/gatesiamges/3.jpg'
 
 export default class cart extends Component {
     render() {
         return (
             <div>
-                
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h1 class="display-4">Items In Your Shopping Cart</h1>
+                    <p class="lead">Attention Hawaii, Puerto Rico, Virigin Islands, and Canada Customers. Please Call In your Order To Reduce Shipping Charges</p>
+                  </div>
+                </div>
                 <div className="container-fluid-cart">
+                
         <div className="row">
           <aside className="col-lg-9">
             <div className="card">
@@ -24,9 +33,9 @@ export default class cart extends Component {
                     <tr>
                       <td>
                         <figure className="itemside align-items-center">
-                          <div className="aside"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574342017/rTVSl.jpg" className="img-sm" /></div>
-                          <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Tshirt with round nect</a>
-                            <p className="text-muted small">SIZE: L <br /> Brand: MAXTRA</p>
+                          <div className="aside"><img src={Image} className="img-sm" /></div>
+                          <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Pacific Tide</a>
+                            <p className="text-muted small">SKU: candycane3ft <br /> Brand: MAXTRA</p>
                           </figcaption>
                         </figure>
                       </td>
@@ -44,9 +53,9 @@ export default class cart extends Component {
                     <tr>
                       <td>
                         <figure className="itemside align-items-center">
-                          <div className="aside"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574342054/imgrc0078783629.jpg" className="img-sm" /></div>
+                          <div className="aside"><img src={Image2} className="img-sm" /></div>
                           <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Flower Formal T-shirt</a>
-                            <p className="text-muted small">SIZE: L <br /> Brand: ADDA </p>
+                            <p className="text-muted small">SKU: candycane3ft <br /> Brand: ADDA </p>
                           </figcaption>
                         </figure>
                       </td>
@@ -64,9 +73,9 @@ export default class cart extends Component {
                     <tr>
                       <td>
                         <figure className="itemside align-items-center">
-                          <div className="aside"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574342208/ra_unisex_tshirt_x2200_fafafa_ca443f4786_front-c_267_146_1000_1000-bg_f8f8f8.u1.jpg" className="img-sm" /></div>
+                          <div className="aside"><img src={Image3} className="img-sm" /></div>
                           <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Printed White Tshirt</a>
-                            <p className="small text-muted">SIZE:M <br /> Brand: Cantabil</p>
+                            <p className="small text-muted">SKU: candycane3ft<br /> Brand: Cantabil</p>
                           </figcaption>
                         </figure>
                       </td>
@@ -89,8 +98,45 @@ export default class cart extends Component {
             <div className="card mb-3">
               <div className="card-body">
                 <form>
-                  <div className="form-group"> <label>Have coupon?</label>
-                    <div className="input-group"> <input type="text" className="form-control coupon" name placeholder="Coupon code" /> <span className="input-group-append"> <button className="btn btn-primary btn-apply coupon">Apply</button> </span> </div>
+                  <div className="form-group"> <label>Ordering Instructions</label>
+                  <textarea class="form-control" aria-label="Enter Instruction here"></textarea>
+                  <br></br>
+                  <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Ship to Zip/Postal Code</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
+                  </div>
+                  <br></br>
+                  <div class="btn-group">
+                      <button class="btn btn-primary btn-sm" type="button">
+                        Payment Method
+                      </button>
+                      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Visa</a>
+                      <a class="dropdown-item" href="#">Master Card</a>
+                      <a class="dropdown-item" href="#">PayPal</a>
+                      </div>
+                  </div>  
+                  <br></br><br></br>
+                  <div class="btn-group">
+                      <button class="btn btn-primary btn-sm" type="button">
+                        Ship to Country
+                      </button>
+                      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">United States</a>
+                      <a class="dropdown-item" href="#">Mexico</a>
+                      <a class="dropdown-item" href="#">Saint Lucia</a>\
+                      <a class="dropdown-item" href="#">Guam</a>
+                      <a class="dropdown-item" href="#">Grenada</a>
+                      </div>
+                  </div>
                   </div>
                 </form>
               </div>
