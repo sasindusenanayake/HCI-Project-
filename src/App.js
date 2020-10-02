@@ -17,9 +17,6 @@ function App() {
   return (
     <div className="App">
     <Header></Header>
-    <br></br>
-    <br></br>
-    <br></br>
       <Router>
         <Switch>
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
@@ -28,7 +25,6 @@ function App() {
           <Route path="/moderndrivawaygates"><Moderndriveaway></Moderndriveaway></Route>
         </Switch>
       </Router>
-    <br></br>
     <Footer></Footer>  
     </div>
   );

@@ -7,7 +7,7 @@ export default class header extends Component {
         return (
             <div>
               <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style={{position:"relative"}} >
           <div className="container-fluid">
             <a className="navbar-brand js-scroll-trigger" href="index.html">
               <h2 />
