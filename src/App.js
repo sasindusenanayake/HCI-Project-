@@ -21,7 +21,7 @@ function App() {
         <Switch>
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
           <Route path="/cart"><Cart></Cart></Route>
-          <Route path="/contact"><Contact></Contact></Route>
+          <Route path="/contactus"><Contact></Contact></Route>
           <Route path="/moderndrivawaygates"><Moderndriveaway></Moderndriveaway></Route>
         </Switch>
       </Router>
