@@ -15,9 +15,6 @@ function App() {
   return (
     <div className="App">
     <Header></Header>
-    <br></br>
-    <br></br>
-    <br></br>
       <Router>
         <Switch>
           <Route path="/test"><Sasindu></Sasindu></Route>
@@ -26,7 +23,6 @@ function App() {
           <Route path="/gates"></Route>
         </Switch>
       </Router>
-    <br></br>
     <Footer></Footer>  
     </div>
   );
