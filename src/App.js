@@ -4,13 +4,12 @@ import './App.css';
 import Footer from'./components/footer/footer';
 import Header from './components/Header/header'
 import Driveaway from './components/pages/driveawaygates'
-import Moderndriveaway from './components/pages/moderngates'
-import Cart from './components/pages/cart'
+import Sasindu from './components/pages/test'
 import {
     BrowserRouter as Router,
     Switch,
     Route
-}from 'react-router-dom'
+}from 'react-router-dom'   
 
 function App() {
   return (
@@ -21,9 +20,10 @@ function App() {
     <br></br>
       <Router>
         <Switch>
+          <Route path="/test"><Sasindu></Sasindu></Route>
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
-          <Route path="/cart"><Cart></Cart></Route>
-          <Route path="/moderndrivawaygates"><Moderndriveaway></Moderndriveaway></Route>
+          <Route path="/cart"></Route>
+          <Route path="/gates"></Route>
         </Switch>
       </Router>
     <br></br>
