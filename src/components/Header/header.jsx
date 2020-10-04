@@ -27,7 +27,7 @@ export default class header extends Component {
                   </a>
                   <ul className="dropdown-menu main-menubox" aria-labelledby="navbarDropdownMenuLink">
                     <li><a className="dropdown-item" href="#">Drivaaway Gates</a></li>
-                    <li><a className="dropdown-item" href="#">Privacy Gates</a></li>       
+                    <li><a className="dropdown-item" href="#">Privacy Gates</a></li>
                   </ul>
                 </li>
                 <li className="nav-item dropdown main-menu">
@@ -44,7 +44,7 @@ export default class header extends Component {
                   </a>
                   <ul className="dropdown-menu main-menubox" aria-labelledby="navbarDropdownMenuLink">
                     <li><a className="dropdown-item" href="#">Remote Controlls</a></li>
-                    <li><a className="dropdown-item" href="#">Recievers</a></li>  
+                    <li><a className="dropdown-item" href="/receivers">Recievers</a></li>  
                     <li><a className="dropdown-item" href="#">Telephone</a></li>       
                   </ul>
                 </li>
