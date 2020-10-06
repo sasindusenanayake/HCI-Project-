@@ -26,7 +26,7 @@ export default class footer extends Component {
               <div className="col-md-3 col-sm-6">
                 {/*Column1*/}
                 <div className="footer-pad">
-                  <h4>About Us</h4>
+                 <a href="/aboutus"> <h4>About Us</h4></a>
                   <ul className="list-unstyled">
                     <li><a href="#">Website Tutorial</a></li>
                     <li><a href="#">Accessibility</a></li>

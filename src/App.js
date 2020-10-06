@@ -5,7 +5,10 @@ import Footer from'./components/footer/footer';
 import Header from './components/Header/header'
 import Driveaway from './components/pages/driveawaygates'
 import Sasindu from './components/pages/test'
-import Hci1 from './components/pages/home';
+import Mpage from './components/pages/mpage'
+import Aboutus from './components/pages/aboutus'
+import Dapp from './components/pages/dealersapplication'
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -16,19 +19,17 @@ function App() {
   return (
     <div className="App">
     <Header></Header>
-    <br></br>
-    <br></br>
-    <br></br>
       <Router>
         <Switch>
+        <Route path="/aboutus"><Aboutus></Aboutus></Route>
+        <Route path="/dealersapplication"><Dapp></Dapp></Route>
           <Route path="/test"><Sasindu></Sasindu></Route>
-          <Route> path="/home"><Hci1></Hci1></Route>
+          <Route path="/mpage"><Mpage></Mpage></Route>
           <Route path="/drivawaygates"><Driveaway> </Driveaway></Route> 
           <Route path="/cart"></Route> 
           <Route path="/gates"></Route>
         </Switch>
       </Router>
-    <br></br>
     <Footer></Footer>  
     </div>
   );
