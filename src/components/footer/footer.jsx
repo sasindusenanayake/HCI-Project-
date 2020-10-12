@@ -16,7 +16,7 @@ export default class footer extends Component {
                   <ul className="list-unstyled">
                     <li><a href="#" /></li>
                     <li><a href="contactus">Contact</a></li>
-                    <li><a href="#">Contact Directory</a></li>
+                    <li><a href="Manufactures">Manufactures</a></li>
                     <li><a href="#">Forms</a></li>
                     <li><a href="#">News and Updates</a></li>
                     <li><a href="#">FAQs</a></li>

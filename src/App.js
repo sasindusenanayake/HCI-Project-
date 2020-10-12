@@ -7,6 +7,8 @@ import Driveaway from './components/pages/driveawaygates'
 import Moderndriveaway from './components/pages/moderngates'
 import Cart from './components/pages/cart'
 import Contact from './components/pages/contactus'
+import Rcontrol from './components/pages/RemoteControls'
+import Manufactures from './components/pages/Manufactures'
 import {
     BrowserRouter as Router,
     Switch,
@@ -22,6 +24,8 @@ function App() {
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
           <Route path="/cart"><Cart></Cart></Route>
           <Route path="/contactus"><Contact></Contact></Route>
+          <Route path="/RemoteControls"><Rcontrol></Rcontrol></Route>
+          <Route path="/Manufactures"><Manufactures></Manufactures></Route>
           <Route path="/moderndrivawaygates"><Moderndriveaway></Moderndriveaway></Route>
         </Switch>
       </Router>
