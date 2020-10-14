@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '.././pages/driveawaystyle.css'
+import Cards from'../images/driveawayimages'
 
 export default class driveawaygates extends Component {
     render() {
@@ -11,7 +12,6 @@ export default class driveawaygates extends Component {
                     <div className="col-md-6" style={{background: 'url(https://images.pexels.com/photos/911999/pexels-photo-911999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center', backgroundSize: 'cover'}}>
                     </div>
                     <div className="col-md-6 text-white" style={{padding: '40px', maxWidth: '600px'}}>
-                    <h1>Mød Nicolai.</h1>
                     <h2 style={{marginTop: '0px'}}>Driveaway Gates</h2>
                     <p>In this page you will find one of the largest Wrought Iron Fence and Gate Result selection in the net. A great selection of Security Gates, Safety Gates,
                     specializing in Front Gates, Driveway Gates, known as the Gate World at your finger tips. We have most brands of Automatic Electric Driveway Gate
@@ -27,6 +27,10 @@ export default class driveawaygates extends Component {
                     </div>.
                 </div>
                 </div>
+                <br></br>
+                    <h2>Click On Images For More Information</h2>
+                <br></br>
+                <Cards></Cards>
         
             </div>
             </div>

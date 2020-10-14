@@ -1,0 +1,17 @@
+body{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+    overflow-x: hidden;
+   
+}
+.receivers-h1{
+    color:rgb(54, 231, 54);
+}
+
+.card-img-top {
+    width: 30%;
+    
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}

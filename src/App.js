@@ -5,6 +5,14 @@ import Footer from'./components/footer/footer';
 import Header from './components/Header/header'
 import Driveaway from './components/pages/driveawaygates'
 import Receivers from './components/pages/receivers'
+import Moderndriveaway from './components/pages/moderngates'
+import Cart from './components/pages/cart'
+import FAQ from './components/pages/faq'
+import OurPolicies from './components/pages/ourPolicies'
+
+
+
+
 
 import {
     BrowserRouter as Router,
@@ -16,18 +24,16 @@ function App() {
   return (
     <div className="App">
     <Header></Header>
-    <br></br>
-    <br></br>
-    <br></br>
       <Router>
         <Switch>
           <Route path="/receivers"><Receivers></Receivers></Route>
+          <Route path="/faq"><FAQ></FAQ></Route>
+          <Route path="/ourPolicies"><OurPolicies></OurPolicies></Route>
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
-          <Route path="/cart"></Route>
-          <Route path="/gates"></Route>
+          <Route path="/cart"><Cart></Cart></Route>
+          <Route path="/moderndrivawaygates"><Moderndriveaway></Moderndriveaway></Route>
         </Switch>
       </Router>
-    <br></br>
     <Footer></Footer>  
     </div>
   );

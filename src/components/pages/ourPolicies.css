@@ -1,0 +1,37 @@
+body{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+    overflow-x: hidden;
+   
+}
+#tabs{
+    text-align: justify;
+}
+.ourP-h1{
+    color:rgb(54, 231, 54);
+}
+#mailBtn{
+   float: right;
+}
+
+
+#mySidenav a {
+    position: absolute;
+    right: -40px;
+    transition: 0.3s;
+    padding: 10px 10px 10px 27px;
+    width: 70px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  #mySidenav a:hover {
+    right: 0;
+  }
+   
+  #mail {
+    
+    background-color: #2196F3;
+  }

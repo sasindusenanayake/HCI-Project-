@@ -7,7 +7,7 @@ export default class header extends Component {
         return (
             <div>
               <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav" style={{position:"relative"}} >
           <div className="container-fluid">
             <a className="navbar-brand js-scroll-trigger" href="index.html">
               <h2 />
@@ -26,8 +26,8 @@ export default class header extends Component {
                     Gates
                   </a>
                   <ul className="dropdown-menu main-menubox" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a className="dropdown-item" href="#">Drivaaway Gates</a></li>
-                    <li><a className="dropdown-item" href="#">Privacy Gates</a></li>
+                    <li><a className="dropdown-item" href="/drivawaygates">Drivaaway Gates</a></li>
+                    <li><a className="dropdown-item" href="/moderndrivawaygates">Modern Drivaaway Gates</a></li>       
                   </ul>
                 </li>
                 <li className="nav-item dropdown main-menu">
