@@ -12,11 +12,11 @@ export default class footer extends Component {
               <div className="col-md-3 col-sm-6">
                 {/*Column1*/}
                 <div className="footer-pad">
-                  <h4>Contact US</h4>
+                  <h4>More Info</h4>
                   <ul className="list-unstyled">
                     <li><a href="#" /></li>
-                    <li><a href="#">Payment Center</a></li>
-                    <li><a href="#">Contact Directory</a></li>
+                    <li><a href="contactus">Contact</a></li>
+                    <li><a href="Manufactures">Manufactures</a></li>
                     <li><a href="#">Forms</a></li>
                     <li><a href="#">News and Updates</a></li>
                     <li><a href="#">FAQs</a></li>
