@@ -17,16 +17,16 @@ export default class cart extends Component {
                 <div className="container-fluid-cart">
                 
         <div className="row">
-          <aside className="col-lg-9">
+          <aside className="col-lg-8">
             <div className="card">
               <div className="table-responsive">
                 <table className="table table-borderless table-shopping-cart">
                   <thead className="text-muted">
                     <tr className="small text-uppercase">
                       <th scope="col">Product</th>
-                      <th scope="col" width={120}>Quantity</th>
-                      <th scope="col" width={120}>Price</th>
-                      <th scope="col" className="text-right d-none d-md-block" width={200} />
+                      <th scope="col" width={100}>Quantity</th>
+                      <th scope="col" width={100}>Price</th>
+                      <th scope="col" className="text-right d-none d-md-block" width={100} />
                     </tr>
                   </thead>
                   <tbody>
