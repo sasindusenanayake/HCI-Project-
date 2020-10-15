@@ -8,6 +8,7 @@ import Sasindu from './components/pages/test'
 import Mpage from './components/pages/mpage'
 import Aboutus from './components/pages/aboutus'
 import Dapp from './components/pages/dealersapplication'
+import Home from './components/pages/homegate'
 
 import {
     BrowserRouter as Router,
@@ -22,6 +23,7 @@ function App() {
       <Router>
         <Switch>
         <Route path="/aboutus"><Aboutus></Aboutus></Route>
+        <Route path="/homegate"><Home></Home></Route>
         <Route path="/dealersapplication"><Dapp></Dapp></Route>
           <Route path="/test"><Sasindu></Sasindu></Route>
           <Route path="/mpage"><Mpage></Mpage></Route>
