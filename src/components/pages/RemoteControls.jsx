@@ -4,7 +4,7 @@ import Rcards from '../images/rcontrol'
 export default class RemoteControls extends Component {
     render() {
         return (
-            <div  style={{background: 'url( https://cdn.wallpapersafari.com/87/86/QLVyAC.jpg)'}}>
+            // <div  style={{background: 'url( https://cdn.wallpapersafari.com/87/86/QLVyAC.jpg)'}}>
             <div className="container" >
                 <div className="row">
                     <div className="col">
@@ -14,7 +14,7 @@ export default class RemoteControls extends Component {
 
                 </div>
             </div>
-            </div>
+            // </div>
         )
     }
 }

@@ -5,7 +5,7 @@
 
 
 h1{
-    color: rgb(41, 243, 14);
+    color: rgb(71, 71, 71);
 }
 .btn{
     width: 150px;
@@ -25,10 +25,12 @@ h1{
 /* body{
     background: url('https://cdn.wallpapersafari.com/64/92/uMUbRo.jpg');
 }  */
-
+.bcon{
+    background-color: rgba(164, 255, 255, 0.349);
+}
 .contact{
     width: 60%;
-    height: 1100px;
+    height: 1050px;
     padding: 25px;
     margin: 10% auto;
     text-align: center;
@@ -36,7 +38,7 @@ h1{
     margin-bottom: 0px;
     border-radius: 5px;
     box-shadow: 3px 3px 8px 0px #0e0e0e;
-    background-color: rgba(255, 255, 255, 0.12);
+    background-color: rgba(99, 99, 99, 0.486);
   }
 
   .t1,.t2,.t3,.t4,.t5,.t6,.t7 {
