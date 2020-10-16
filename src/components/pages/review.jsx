@@ -37,6 +37,7 @@ export default class review extends Component {
                         <div class="description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in fermentum. Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere, mattis massa eget, ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.</p>
                         </div>
+                        <td className="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title href className="btn btn-light" data-toggle="tooltip" data-abc="true"> <i className="fa fa-heart" /></a> <a href className="btn btn-light btn-round" data-abc="true"> Remove</a> </td>
                     </div>
                     <div class="client_testimonial">
                         <div class="pic">
@@ -48,7 +49,10 @@ export default class review extends Component {
                         </div>
                         <div class="description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in fermentum. Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere, mattis massa eget, ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.</p>
+                            
                         </div>
+                        <td className="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title href className="btn btn-light" data-toggle="tooltip" data-abc="true"> <i className="fa fa-heart" /></a> <a href className="btn btn-light btn-round" data-abc="true"> Remove</a> </td>
+                        
                     </div>
                    
             </div>
@@ -67,6 +71,9 @@ export default class review extends Component {
                   <textarea class="form-control" aria-label="Enter Instruction here"></textarea>
                   <div className="form-group"> <label>Enter Your Review</label>
                   <textarea class="form-control" aria-label="Enter Instruction here"></textarea>
+                  <div className="form-group"> <label>Email</label>
+                  <textbox class="form-control" aria-label="Enter Instruction here" type="email"></textbox>
+                  </div>
                   <br></br>
                   
                   <br></br>
