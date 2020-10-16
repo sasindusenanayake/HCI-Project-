@@ -22,7 +22,7 @@ export default class contactus extends Component {
                         <form name="MyForm" action="contactus.jsx">
             
                         <label ><font color="white">First Name :</font></label><br/>
-                        <input type="text"   name="fname" id="txt_fname" className="t1"/><br/>
+                        <input type="text"   name="fname" id="txt_fname" className="t1"  /> <br/>
 
                         <label><font color="white">Last Name :</font></label><br/>
                         <input type="text"   name="lname" id="txt_lname" className="t2"/><br/>

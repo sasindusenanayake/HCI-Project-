@@ -54,9 +54,46 @@
 .dname{
    float: left;
 } 
+.contact{
+   width: 60%;
+   height: 1100px;
+   padding: 25px;
+   margin: 10% auto;
+   text-align: center;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   border-radius: 5px;
+   box-shadow: 3px 3px 8px 0px #0e0e0e;
+   background-color: rgba(255, 255, 255, 0.12);
+ }
 
+ .t1,.t2,.t3,.t4,.t5,.t6,.t7 {
+   display: inline-block;
+   color: rgb(31, 1, 1);
+   height: 35px;
+   font-size: 20px;
+   margin: 10px 5px;
+   padding: 0 0 0 80px;
+   border-radius: 4px;
+   border: 1px solid rgba(255, 255, 255, 0.45);
+   background-color: rgba(100, 100, 100, 0.28);
+ }  
+
+ .t8{
+   display: inline-block;
+   color: #fff;
+   height: 150px;
+   font-size: 20px;
+   margin: 10px 5px;
+   padding: 0 0 0 150px;
+   border-radius: 4px;
+   border: 1px solid rgba(255, 255, 255, 0.45);
+   background-color: rgba(100, 100, 100, 0.28);
+   
+ } 
  .contact-form {
    
+   height: 100%;
 
     background-color:rgba(72,72,72,0.9);
    
@@ -83,7 +120,7 @@
  .contact-form input,   
  .contact-form select,   
  .contact-form textarea { 
-    /*width:100%;*/
+    width:100%;
     background: #fff;
     border: 0; 
     -moz-border-radius: 4px;  

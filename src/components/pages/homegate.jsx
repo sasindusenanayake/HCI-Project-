@@ -4,12 +4,12 @@ import Cards from'../images/homegateimg'
 import '.././pages/homegate.css'
 
 const data =  [
-    {'id':'1','src':'https://doctormetalworks.ca/wp-content/uploads/2018/03/driveway-gate-15.jpg'},
-    {'id':'2','src':'http://gardenpassages.com/wp-content/uploads/2016/12/Tuscan-Gate-202.jpg'},
-    {'id':'3','src':'http://garagegateremotes.com.au/shop/images/source/Remotes/Herculift/original.jpg'},
-    {'id':'4','src':'https://cdn.shopify.com/s/files/1/0141/9617/8998/products/LINEAR_AP5_1200x1200.jpg?v=1565638254'},
-    {'id':'5','src':'http://interiorexteriordoors.com/wp-content/uploads/2015/10/residential-roll-up-garage-doors-1.jpg'}
-  ];
+  {'id':'1','src':'https://xcel.pl/images/min/artykuly/150/nowoczesne_ogrodzenie_katowice_arete_horizon_rombo_xcel_2_26_-1920.jpg'},
+  {'id':'2','src':'https://fancyfence.pl/en/wp-content/uploads/2017/09/sek_1-2-1024x422.jpg'},
+  {'id':'3','src':'https://fancyfence.pl/en/wp-content/uploads/2017/07/basen_maly-1-1024x422.jpg'},
+  {'id':'4','src':'https://fancyfence.pl/en/wp-content/uploads/2017/09/sek_2-1-1024x422.jpg'},
+  {'id':'5','src':'https://xcel.pl/images/min/artykuly/150/nowoczesne_ogrodzenie_katowice_arete_horizon_rombo_xcel_2_26_-1920.jpg'}
+];
 
 export default class homegate extends Component {
     render() {
