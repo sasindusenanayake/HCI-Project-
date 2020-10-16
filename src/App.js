@@ -49,7 +49,6 @@ function App() {
           <Route path="/test"><Sasindu></Sasindu></Route>
           <Route path="/mpage"><Mpage></Mpage></Route>
           
-           
           <Route path="/gates"></Route>
 
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
