@@ -4,10 +4,14 @@
 }
 
 
-h1{
-    color: rgb(71, 71, 71);
+
+
+
+.contact{
+    color: rgb(41, 243, 14);
+
 }
-.btn{
+.btncontact{
     width: 150px;
     background-color: #4CAF50;
     color: white;
@@ -18,7 +22,7 @@ h1{
     cursor: pointer;
 }
 
-.btn:hover{
+.btncontact:hover{
     color: rgb(0, 0, 0);
 }
 

@@ -12,9 +12,9 @@ export default class moderngates extends Component {
                     <div className="col-md-6" style={{background: 'url(https://images.pexels.com/photos/911999/pexels-photo-911999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center', backgroundSize: 'cover'}}>
                     </div>
                     <div className="col-md-6 text-white" style={{padding: '40px', maxWidth: '600px'}}>
-                    <h1>Mød Nicolai.</h1>
+                    
                     <h2 style={{marginTop: '0px'}}>Modern Driveaway Gates</h2>
-                    <p>L. A. Ornamental offers a wide selection of decorative custom driveway gates in Aluminum or Wrought Metals. Our quality aluminum
+                    <p style={{textAlign:'justify'}}>L. A. Ornamental offers a wide selection of decorative custom driveway gates in Aluminum or Wrought Metals. Our quality aluminum
                         gates offer elegance, security, safety, and complete satisfaction to our customers. We offer a large selection of designs to choose
                         from, but we can manufacture your custom made design if you produce the design to us. Choose from a great selection of Security
                         Gates, Safety Gates, as we specialize in Front Driveway Entrance or Entry Gates.  Our Aluminum and wrought Iron Driveway Gates are

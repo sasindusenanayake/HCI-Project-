@@ -14,6 +14,9 @@ import Cart from './components/pages/cart'
 import Contact from './components/pages/contactus'
 import Rcontrol from './components/pages/RemoteControls'
 import Manufactures from './components/pages/Manufactures'
+import Reviews from './components/pages/review'
+import Moderngrd from './components/pages/moderngarden'
+import Prigarden from './components/pages/privacygarden'
 import {
     BrowserRouter as Router,
     Switch,
@@ -33,7 +36,7 @@ function App() {
           <Route path="/test"><Sasindu></Sasindu></Route>
           <Route path="/mpage"><Mpage></Mpage></Route>
           <Route path="/drivawaygates"><Driveaway> </Driveaway></Route> 
-          <Route path="/cart"></Route> 
+           
           <Route path="/gates"></Route>
 
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
@@ -42,6 +45,9 @@ function App() {
           <Route path="/RemoteControls"><Rcontrol></Rcontrol></Route>
           <Route path="/Manufactures"><Manufactures></Manufactures></Route>
           <Route path="/moderndrivawaygates"><Moderndriveaway></Moderndriveaway></Route>
+          <Route path="/privacygarden"><Prigarden></Prigarden></Route>
+          <Route path="/review"><Reviews></Reviews></Route>
+          <Route path="/moderngarden"><Moderngrd></Moderngrd></Route>
 
         </Switch>
       </Router>

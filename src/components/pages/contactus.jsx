@@ -149,7 +149,11 @@ export default class contactus extends Component {
                <div className="contact">
                     <div class="Cpage">
                         {/* <div className="col-md-6" style={{background: 'url( https://www.google.com/search?q=garden+gates+wallpaper&tbm=isch&ved=2ahUKEwiu7pjzhpjsAhXBCrcAHW-VA1IQ2-cCegQIABAA&oq=garden+gates+wallpaper&gs_lcp=CgNpbWcQAzoCCAA6BggAEAUQHjoGCAAQCBAeOgQIABAYOgQIIxAnOgQIABBDUJXyDVil6A5g7esOaAZwAHgAgAHzAYgBuxeSAQYwLjExLjWYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=1zx4X-6mOsGV3LUP76qOkAU&bih=1005&biw=1920&client=firefox-b-d#imgrc=UK8w7qdEgRtHHM) no-repeat center center', backgroundSize: 'cover'}}></div> */}
+
                         <h1 style={{color: "white"}}>Contact Us </h1>
+
+                        
+
                             {/* <div className="privacy"style={{padding: '50px', maxWidth: '600px'}}>
                                 <h5 style={{marginTop: '0px'}}>Privacy Statement :</h5>
                                 <p>In the process of placing an order we collect the customer e-mail address and home address. this is strictly used for billing,shipping,and news letter purposes.
@@ -199,7 +203,11 @@ export default class contactus extends Component {
                         {/* <input type="text"   name="text" className="t8"/><br/> */}
                         <textarea rows="5" cols="25" name="text" id="txt_t" className="t8"></textarea><br/>
             
-                        <button className="btn" type="submit" >Contact</button>
+
+                        
+
+                        <button className="btncontact" type="button" onclick="validation();">Contact</button>
+
             
                     </form>
                     </div>
