@@ -10,7 +10,7 @@ export default class cart extends Component {
             <div>
                 <div class="jumbotron jumbotron-fluid">
                   <div class="container">
-                    <h1 class="display-4">Items In Your Shopping Cart</h1>
+                    <h1 class="display-4" style={{color: "black"}}>Items In Your Shopping Cart</h1>
                     <p class="lead">Attention Hawaii, Puerto Rico, Virigin Islands, and Canada Customers. Please Call In your Order To Reduce Shipping Charges</p>
                   </div>
                 </div>
@@ -34,7 +34,7 @@ export default class cart extends Component {
                       <td>
                         <figure className="itemside align-items-center">
                           <div className="aside"><img src={Image} className="img-sm" /></div>
-                          <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Pacific Tide</a>
+                          <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Spear of the Ocean  15ft Wide</a>
                             <p className="text-muted small">SKU: candycane3ft <br /> Brand: MAXTRA</p>
                           </figcaption>
                         </figure>
@@ -54,7 +54,7 @@ export default class cart extends Component {
                       <td>
                         <figure className="itemside align-items-center">
                           <div className="aside"><img src={Image2} className="img-sm" /></div>
-                          <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Flower Formal T-shirt</a>
+                          <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Spear of the Ocean  10ft Wide</a>
                             <p className="text-muted small">SKU: candycane3ft <br /> Brand: ADDA </p>
                           </figcaption>
                         </figure>
@@ -74,7 +74,7 @@ export default class cart extends Component {
                       <td>
                         <figure className="itemside align-items-center">
                           <div className="aside"><img src={Image3} className="img-sm" /></div>
-                          <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Printed White Tshirt</a>
+                          <figcaption className="info"> <a href="#" className="title text-dark" data-abc="true">Driveway Gate European Fan 10ft</a>
                             <p className="small text-muted">SKU: candycane3ft<br /> Brand: Cantabil</p>
                           </figcaption>
                         </figure>
