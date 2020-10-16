@@ -3,8 +3,63 @@ import './cart.css'
 import Image from '../../asserts/gatesiamges/1.jpg'
 import Image2 from '../../asserts/gatesiamges/2.jpg'
 import Image3 from '../../asserts/gatesiamges/3.jpg'
+import SweetAlert from 'react-bootstrap-sweetalert';
 
 export default class cart extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      alert: null
+    };
+  } 
+
+  deleteThisGoal() {
+    const getAlert = () => (
+      <SweetAlert 
+        success 
+        title="Make Purchase!" 
+        onConfirm={() => this.hideAlert()}
+      >
+        Thank you for choosing us
+      </SweetAlert>
+    );
+
+    this.setState({
+      alert: getAlert()
+    });
+  }
+
+  removeThisGoal() {
+    const getAlert = () => (
+      <SweetAlert 
+        success 
+        title="You want remove this item" 
+        onConfirm={() => this.hideAlert1()}
+      >
+        Thank you 
+      </SweetAlert>
+    );
+
+    this.setState({
+      alert1: getAlert()
+    });
+  }
+
+  hideAlert() {
+    console.log('Hiding alert...');
+    this.setState({
+      alert: null
+    });
+  }
+
+  hideAlert1() {
+    console.log('Hiding alert...');
+    this.setState({
+      alert1: null
+    });
+  }
+
     render() {
         return (
             <div>
@@ -48,7 +103,7 @@ export default class cart extends Component {
                       <td>
                         <div className="price-wrap"> <var className="price">$10.00</var> <small className="text-muted"> $9.20 each </small> </div>
                       </td>
-                      <td className="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title href className="btn btn-light" data-toggle="tooltip" data-abc="true"> <i className="fa fa-heart" /></a> <a href className="btn btn-light" data-abc="true"> Remove</a> </td>
+                      <td className="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title href className="btn btn-light" data-toggle="tooltip" data-abc="true"> <i className="fa fa-heart" /></a> <a href className="btn btn-light" data-abc="true" onClick={() => this.removeThisGoal()}> Remove</a>{this.state.alert1} </td>
                     </tr>
                     <tr>
                       <td>
@@ -68,7 +123,7 @@ export default class cart extends Component {
                       <td>
                         <div className="price-wrap"> <var className="price">$15</var> <small className="text-muted"> $12 each </small> </div>
                       </td>
-                      <td className="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title href className="btn btn-light" data-toggle="tooltip" data-abc="true"> <i className="fa fa-heart" /></a> <a href className="btn btn-light btn-round" data-abc="true"> Remove</a> </td>
+                      <td className="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title href className="btn btn-light" data-toggle="tooltip" data-abc="true"> <i className="fa fa-heart" /></a> <a href className="btn btn-light btn-round" data-abc="true" onClick={() => this.removeThisGoal()}> Remove</a>{this.state.alert1} </td>
                     </tr>
                     <tr>
                       <td>
@@ -87,7 +142,7 @@ export default class cart extends Component {
                       <td>
                         <div className="price-wrap"> <var className="price">$9</var> <small className="text-muted"> $6 each</small> </div>
                       </td>
-                      <td className="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title href className="btn btn-light" data-toggle="tooltip" data-abc="true"> <i className="fa fa-heart" /></a> <a href className="btn btn-light btn-round" data-abc="true"> Remove</a> </td>
+                      <td className="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title href className="btn btn-light" data-toggle="tooltip" data-abc="true"> <i className="fa fa-heart" /></a> <a href className="btn btn-light btn-round" data-abc="true" onClick={() => this.removeThisGoal()}> Remove</a> {this.state.alert1}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -155,7 +210,7 @@ export default class cart extends Component {
                   <dt>Total:</dt>
                   <dd className="text-right text-dark b ml-3"><strong>$59.97</strong></dd>
                 </dl>
-                <hr /> <a href="#" className="btn btn-out btn-primary btn-square btn-main" data-abc="true"> Make Purchase </a> <a href="#" className="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Continue Shopping</a>
+                <hr /> <a href="#" onClick={() => this.deleteThisGoal()} className="btn btn-out btn-primary btn-square btn-main" data-abc="true" > Make Purchase </a> {this.state.alert}<a href="#" className="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Continue Shopping</a>
               </div>
             </div>
           </aside>
