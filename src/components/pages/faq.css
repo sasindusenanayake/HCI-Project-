@@ -1,0 +1,24 @@
+body{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+    overflow-x: hidden;
+   
+}
+.faq-h1{
+    color:black;
+    /* text-shadow: 2px 3px 5px grey; */
+}
+.accordionAlign {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+
+.fName, .email, .text-muted, .question, .questionLabel, .questionHeader, .answer{
+    float:left;
+}
+.faqContainer{
+    background-color: rgb(48, 207, 235);
+}
+

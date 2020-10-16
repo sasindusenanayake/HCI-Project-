@@ -1,0 +1,28 @@
+body{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+    overflow-x: hidden;
+   
+}
+.receivers-h1{
+    color:black;
+    text-shadow: 2px 3px 5px grey;
+}
+
+.card-img-top {
+    width: 30%;
+    margin-left: 100px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.filterTab{
+    float: right;
+    margin-right: 50px;
+}
+.tabMargin{
+    margin-left: 10px;
+}
+.card-text{
+    text-align: justify;
+}
