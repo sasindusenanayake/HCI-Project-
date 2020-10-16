@@ -164,6 +164,8 @@ export default class contactus extends Component {
                     
                         <form name="MyForm" action="contactus.jsx" onSubmit={this.contactSubmit.bind(this)}>
             
+                        <label ><font color="white">First Name :</font></label><br/>
+                        <input type="text"   name="fname" id="txt_fname" className="t1"  /> <br/>
                         <label ><font color="white">First Name : </font></label><br/>
                         <span style={{color:"#44cd49"}}>{this.state.errors["fname"]}</span>
                         <input type="text"   ref="fname" id="txt_fname" className="t1" onChange={this.handleChange.bind(this, "fname")} value={this.state.fields["fname"]}/><br/>
