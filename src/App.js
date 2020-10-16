@@ -8,12 +8,15 @@ import Sasindu from './components/pages/test'
 import Mpage from './components/pages/mpage'
 import Aboutus from './components/pages/aboutus'
 import Dapp from './components/pages/dealersapplication'
-import Home from './components/pages/homegate'
+
 import Moderndriveaway from './components/pages/moderngates'
 import Cart from './components/pages/cart'
 import Contact from './components/pages/contactus'
 import Rcontrol from './components/pages/RemoteControls'
 import Manufactures from './components/pages/Manufactures'
+import Reviews from './components/pages/review'
+import Moderngrd from './components/pages/moderngarden'
+import Prigarden from './components/pages/privacygarden'
 import {
     BrowserRouter as Router,
     Switch,
@@ -28,12 +31,12 @@ function App() {
         <Switch>
 
         <Route path="/aboutus"><Aboutus></Aboutus></Route>
-        <Route path="/homegate"><Home></Home></Route>
+      
         <Route path="/dealersapplication"><Dapp></Dapp></Route>
           <Route path="/test"><Sasindu></Sasindu></Route>
           <Route path="/mpage"><Mpage></Mpage></Route>
           <Route path="/drivawaygates"><Driveaway> </Driveaway></Route> 
-          <Route path="/cart"></Route> 
+           
           <Route path="/gates"></Route>
 
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
@@ -42,6 +45,9 @@ function App() {
           <Route path="/RemoteControls"><Rcontrol></Rcontrol></Route>
           <Route path="/Manufactures"><Manufactures></Manufactures></Route>
           <Route path="/moderndrivawaygates"><Moderndriveaway></Moderndriveaway></Route>
+          <Route path="/privacygarden"><Prigarden></Prigarden></Route>
+          <Route path="/review"><Reviews></Reviews></Route>
+          <Route path="/moderngarden"><Moderngrd></Moderngrd></Route>
 
         </Switch>
       </Router>

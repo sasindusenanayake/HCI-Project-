@@ -1,0 +1,51 @@
+body{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+    overflow-x: hidden;
+   
+}
+#tabs{
+    text-align: justify;
+}
+
+.ourP-h1{
+    color:black;
+    text-shadow: 2px 3px 5px grey;
+  }
+
+#mailBtn{
+   float: right;
+}
+
+#mySidenav a {
+    position: absolute;
+    right: -40px;
+    transition: 0.3s;
+    padding: 10px 10px 10px 27px;
+    width: 70px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  #mySidenav a:hover {
+    right: 0;
+  }
+   
+  #mail {
+    
+    background-color: #2196F3;
+  }
+
+  .cargo-slide1{
+    width:800px;
+    height:400px;
+  }
+
+.labelShadow{
+  text-shadow: 2px -2px 5px gray;
+}
+.tab-content{
+  padding-top: 15px;
+}
