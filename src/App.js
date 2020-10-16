@@ -48,7 +48,7 @@ function App() {
         <Route path="/dealersapplication"><Dapp></Dapp></Route>
           <Route path="/test"><Sasindu></Sasindu></Route>
           <Route path="/mpage"><Mpage></Mpage></Route>
-          <Route path="/drivawaygates"><Driveaway> </Driveaway></Route> 
+          
            
           <Route path="/gates"></Route>
 
