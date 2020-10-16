@@ -20,6 +20,7 @@ import Contact from './components/pages/contactus'
 import Rcontrol from './components/pages/RemoteControls'
 import Manufactures from './components/pages/Manufactures'
 import Reviews from './components/pages/review'
+import Homegate from './components/pages/homegate'
 import Moderngrd from './components/pages/moderngarden'
 import Prigarden from './components/pages/privacygarden'
 import {
@@ -34,7 +35,7 @@ function App() {
     <Header></Header>
       <Router>
         <Switch>
-
+        <Route path="/homegate"><Homegate></Homegate></Route>
         <Route path="/aboutus"><Aboutus></Aboutus></Route>
       
         <Route path="/dealersapplication"><Dapp></Dapp></Route>
