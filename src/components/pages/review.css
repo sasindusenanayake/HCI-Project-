@@ -1,0 +1,97 @@
+/*Client Reviews*/
+.our_clients_review{
+    padding:40px 0px;
+}
+.our_clients_review .client_testimonial{
+    border-left: 3px solid #3498db;
+    border-top:1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.09);
+    padding: 30px 30px 30px 30px;
+    margin: 0 10px 4px;
+}
+.our_clients_review .client_testimonial .pic{
+    width:100px;
+    height:100px;
+    float:left;
+    margin-right:20px;
+    border:2px solid rgba(0, 0, 0, 0.09);
+}
+.our_clients_review .client_testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.our_clients_review .client_testimonial .client_info{
+    float:left;
+    margin-right:20px;
+    width: calc(22% - 1.875rem);
+}
+.our_clients_review .client_testimonial .description{
+    font-size: 13px;
+    color: #918686;
+    padding-top:10px;
+    line-height: 20px;
+    margin:0 0 3% 35%;
+}
+.our_clients_review .client_testimonial .title{
+    display:block;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+.our_clients_review .client_testimonial .post{
+    font-size: 12px;
+    display: block;
+}
+.our_clients_review .owl-theme .owl-controls .owl-buttons .owl-prev,
+.our_clients_review .owl-theme .owl-controls .owl-buttons .owl-next
+{
+    height: 96%;
+    line-height: 155px;
+    position: absolute;
+    right: -40px;
+    top: 0;
+}
+.our_clients_review .owl-theme .owl-controls .owl-buttons .owl-prev{right: -40px;}
+.our_clients_review .owl-theme .owl-controls .owl-buttons .owl-next{right: -80px;}
+.our_clients_review .owl-theme .owl-controls .owl-buttons div{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background:#3498db;
+    border-radius: 1px;
+    opacity: 1;
+    padding: 0;
+    margin:0;
+}
+.owl-theme .owl-controls .owl-page span{
+    border: 2px solid #d45113;
+    background: #fff;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span{
+    background: #d45113;
+}
+@media only screen and (max-width: 992px) {
+    .our_clients_review .client_testimonial .description{margin:0 0 3% 44%;}
+}
+@media only screen and (max-width:640px) {
+    .our_clients_review .client_testimonial .pic{
+        float:none;
+        width:100%;
+        height: auto;
+        margin: 0 0 10px;
+    }
+    .our_clients_review .client_testimonial .client_info{
+        float:none;
+        width:100%;
+        margin: 0 0 10px;
+    }
+    .our_clients_review .owl-theme .owl-controls .owl-buttons .owl-prev,
+    .our_clients_review .owl-theme .owl-controls .owl-buttons .owl-next{
+        position:inherit;
+        height:30px;
+        line-height:30px;
+    }
+    .our_clients_review .client_testimonial .description{margin:0;}
+}
