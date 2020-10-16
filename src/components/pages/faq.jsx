@@ -31,6 +31,12 @@ export default class faq extends Component {
       }
     }
 
+    //ques
+    if (!fields["ques"]) {
+      formIsValid = false;
+      errors["ques"] = "Cannot be empty";
+    }
+
     //Email
     if (!fields["email"]) {
       formIsValid = false;
@@ -66,7 +72,6 @@ export default class faq extends Component {
     } else {
       swal("Error!", "Something went wrong!", "error");
       //alert("Error!");
-    
     }
   }
 
@@ -161,6 +166,7 @@ export default class faq extends Component {
             <Form.Row>
               <Form.Group as={Col} controlId="fName">
                 <Form.Label className="fName">First Name</Form.Label>
+                
                 <Form.Control
                   type="text"
                   ref="fname"
@@ -168,24 +174,40 @@ export default class faq extends Component {
                   onChange={this.handleChange.bind(this, "fname")}
                   value={this.state.fields["fname"]}
                 />
+                <Form.Text className="text-muted">
+                {this.state.errors["fname"]}
+                </Form.Text>
               </Form.Group>
 
               <Form.Group as={Col} controlId="formBasicEmail">
                 <Form.Label className="email">Email address</Form.Label>
-                <Form.Control type="email" ref="email" placeholder="Enter email" onChange={this.handleChange.bind(this, "email")}
-                  value={this.state.fields["email"]} />
+                
+                <Form.Control
+                  type="email"
+                  ref="email"
+                  placeholder="Enter email"
+                  onChange={this.handleChange.bind(this, "email")}
+                  value={this.state.fields["email"]}
+                />
                 <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
+                {this.state.errors["email"]}
                 </Form.Text>
               </Form.Group>
             </Form.Row>
             <Form.Group controlId="question">
               <Form.Label className="questionLabel">Question</Form.Label>
+              
               <Form.Control
                 minlength="10"
                 type="text"
                 placeholder="Type here..."
+                ref="ques"
+                  onChange={this.handleChange.bind(this, "ques")}
+                  value={this.state.fields["ques"]}
               />
+              <Form.Text className="text-muted">
+              {this.state.errors["ques"]}
+                </Form.Text>
             </Form.Group>
 
             <Button variant="primary" type="submit">

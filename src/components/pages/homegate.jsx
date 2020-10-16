@@ -1,19 +1,35 @@
 import React, { Component } from 'react'
-import '.././pages/driveawaystyle.css'
-import Cards from'../images/driveawayimages'
+import SwiftSlider from 'react-swift-slider'
+import Cards from'../images/homegateimg'
+import '.././pages/homegate.css'
 
-export default class driveawaygates extends Component {
+const data =  [
+    {'id':'1','src':'https://doctormetalworks.ca/wp-content/uploads/2018/03/driveway-gate-15.jpg'},
+    {'id':'2','src':'http://gardenpassages.com/wp-content/uploads/2016/12/Tuscan-Gate-202.jpg'},
+    {'id':'3','src':'http://garagegateremotes.com.au/shop/images/source/Remotes/Herculift/original.jpg'},
+    {'id':'4','src':'https://cdn.shopify.com/s/files/1/0141/9617/8998/products/LINEAR_AP5_1200x1200.jpg?v=1565638254'},
+    {'id':'5','src':'http://interiorexteriordoors.com/wp-content/uploads/2015/10/residential-roll-up-garage-doors-1.jpg'}
+  ];
+
+export default class homegate extends Component {
     render() {
         return (
-            <div>
-                <div className="dnapage">
-                <div className="container-fluid bg-success">
-                <div className="row d-flex">
-                    <div className="col-md-6" style={{background: 'url(https://images.pexels.com/photos/911999/pexels-photo-911999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center', backgroundSize: 'cover'}}>
-                    </div>
-                    <div className="col-md-6 text-white" style={{padding: '40px', maxWidth: '600px'}}>
-                    <h2 style={{marginTop: '0px'}}>Driveaway Gates</h2>
-                    <p style={{textAlign:'justify'}}>In this page you will find one of the largest Wrought Iron Fence and Gate Result selection in the net. A great selection of Security Gates, Safety Gates,
+           <div className="cover">
+               <div className="dash">
+               <SwiftSlider data={data}/>
+
+               </div>
+                  <div className="details">
+
+                  <Cards></Cards>
+                  </div>
+
+                  <div className="rform">
+                 
+                    <h1 style={{marginTop: '0px'}}>About Us</h1>
+
+
+                    <p>In this page you will find one of the largest Wrought Iron Fence and Gate Result selection in the net. A great selection of Security Gates, Safety Gates,
                     specializing in Front Gates, Driveway Gates, known as the Gate World at your finger tips. We have most brands of Automatic Electric Driveway Gate
                     Openers, brand name like Elite, Power Master, Eagle, and others, with many Door Gate Operating Devices. All the Driveway Metal Gates can be made of
                     Wrought Iron or Aluminum, the Aluminum Driveway Gates are lighter and painted through a powder coat process which is oven baked, and is superior in
@@ -24,16 +40,19 @@ export default class driveawaygates extends Component {
                     Decorative Designs, we can design and manufacture any style in aluminum or wrought iron metals. L. A. Ornamnetal & Rack Corp also offers Fences,
                     Garden or Walk Thru Gates to match your driveway  gates. With over thrity five years of experience in manufacturing and designing elegant, custom, or
                     exotic Aluminum Driveway Gates and Fences, our past and future customers can have peace of mind that they are receiving quality workmanship</p>
-                    </div>.
-                </div>
-                </div>
-                <br></br>
-                    <h2>Click On Images For More Information</h2>
-                <br></br>
-                <Cards></Cards>
-        
-            </div>
-            </div>
+                   
+
+                          <h2> Please fill this Dealers Apllication </h2>    
+
+                           <a href="/dealersapplication"> <h4> Please click this link </h4></a>             
+                                   
+
+                  </div>
+
+           </div>
+            
+
+
         )
     }
 }

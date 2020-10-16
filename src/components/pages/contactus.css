@@ -1,0 +1,65 @@
+.cmain{
+    margin-bottom: 0px;
+   
+}
+
+
+.contact{
+    color: rgb(41, 243, 14);
+}
+.btncontact{
+    width: 150px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btncontact:hover{
+    color: rgb(0, 0, 0);
+}
+
+/* body{
+    background: url('https://cdn.wallpapersafari.com/64/92/uMUbRo.jpg');
+}  */
+
+.contact{
+    width: 60%;
+    height: 1100px;
+    padding: 25px;
+    margin: 10% auto;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px 0px #0e0e0e;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .t1,.t2,.t3,.t4,.t5,.t6,.t7 {
+    display: inline-block;
+    color: #fff;
+    height: 35px;
+    font-size: 20px;
+    margin: 10px 5px;
+    padding: 0 0 0 80px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background-color: rgba(100, 100, 100, 0.28);
+  }  
+
+  .t8{
+    display: inline-block;
+    color: #fff;
+    height: 150px;
+    font-size: 20px;
+    margin: 10px 5px;
+    padding: 0 0 0 150px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background-color: rgba(100, 100, 100, 0.28);
+    
+  }
