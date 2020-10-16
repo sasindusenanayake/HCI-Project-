@@ -6,7 +6,8 @@ body{
    
 }
 .faq-h1{
-    color:rgb(54, 231, 54);
+    color:black;
+    /* text-shadow: 2px 3px 5px grey; */
 }
 .accordionAlign {
     margin: auto;
@@ -14,6 +15,10 @@ body{
     padding: 10px;
   }
 
-.fName, .email, .text-muted, .question, .questionLabel{
+.fName, .email, .text-muted, .question, .questionLabel, .questionHeader, .answer{
     float:left;
 }
+.faqContainer{
+    background-color: rgb(48, 207, 235);
+}
+

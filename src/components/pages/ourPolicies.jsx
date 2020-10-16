@@ -1,8 +1,13 @@
 import React, { Component } from "react";
-import { Tabs, Tab, Button } from "react-bootstrap";
+import { Tabs, Tab, Carousel } from "react-bootstrap";
 import "./ourPolicies.css";
-import EmailIcon from '@material-ui/icons/Email';
-import backgroundImg from "../images/ourPoliciesImg.jpg"
+import EmailIcon from "@material-ui/icons/Email";
+
+import ship from "../images/boat-cargo-ocean.jpg";
+import returnBox from "../images/returnRefund-box.jpg";
+import vectorPayment from "../images/vector-concept-of-payment.jpg";
+
+
 
 export default class ourPolicies extends Component {
   render() {
@@ -10,6 +15,48 @@ export default class ourPolicies extends Component {
       <div>
         {/* <div style={{backgroundImage: `url(${backgroundImg})`}}> */}
         <h1 className="ourP-h1">Our Policies</h1>
+
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={ship}
+              height="500"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3 className="labelShadow">Yes, We Ship Internationally!</h3>
+              <p className="labelShadow">We partner with premium carriers around the world to offer the most competitive rates</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={returnBox}
+              height="500"
+              alt="Second slide"
+            />
+            <Carousel.Caption>
+              <h3 className="labelShadow">Accepting Returns</h3>
+              <p className="labelShadow">Attract and retain buyers with a great returns policy</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={vectorPayment}
+              height="500"
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h3 className="labelShadow">Payment Method Rights and Remedies</h3>
+              <p className="labelShadow">No contract, no commitment. Just amazing deals!</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+
         <div className="row">
           <div className="col-1"></div>
           <div className="col-10" id="tabs">
@@ -20,9 +67,6 @@ export default class ourPolicies extends Component {
                 billing, shipping, and newsletter purposes. We do not sell,
                 distribute, or share that information with anyone. Your
                 information is held in a secure file in our main office.
-                <br/>
-                <br/>
-                <br/>
               </Tab>
               <Tab eventKey="shippingInfo" title="Shipping Information">
                 We will ship via Freight Carrier (Insured) IN THE LOWER 48. Some
@@ -60,10 +104,6 @@ export default class ourPolicies extends Component {
                 <br />
                 You are responsible for all freight charges for shipments that
                 are or returned undelivered with no fault in our part.
-                <br/>
-                <br/>
-                <br/>
-                
               </Tab>
               <Tab eventKey="itemPrices" title="Item Prices and Availability">
                 GATES AND FENCES: All Gates and Fence are made to order, once
@@ -96,17 +136,18 @@ export default class ourPolicies extends Component {
                 Mind.
               </Tab>
             </Tabs>
-           
           </div>
           <div className="col-1"></div>
-          
         </div>
         <div id="mySidenav" className="sidenav">
-          <a href="mailto:gatesnfences@gnf.mail.com?subject=SupportTeam- GatesnFences&body=The message" id="mail">
-          <EmailIcon fontSize="large"/>
+          <a
+            href="mailto:gatesnfences@gnf.mail.com?subject=SupportTeam- GatesnFences&body=The message"
+            id="mail"
+          >
+            <EmailIcon fontSize="large" />
           </a>
         </div>
-        </div>
+      </div>
       // </div>
     );
   }

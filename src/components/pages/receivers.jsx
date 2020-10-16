@@ -2,14 +2,25 @@ import React, { Component } from "react";
 import {
   Card,
   Button,
-  Row,
   Col,
   Dropdown,
   DropdownButton,
   InputGroup,
   FormControl,
   Form,
+  Row,
+  Tab,
+  Nav,
+  OverlayTrigger,
+  Popover,
 } from "react-bootstrap";
+
+import MultiCode from "./multiCode.jsx";
+import Liftmaster from "./liftmaster.jsx";
+import Doorking from "./doorking.jsx";
+import Linear from "./linear.jsx";
+
+
 
 import MC1011 from "../images/Multi_Code_1011.jpg";
 import MC2022 from "../images/Multi_Code_2022.jpg";
@@ -25,130 +36,57 @@ export default class receivers extends Component {
         <h1 className="receivers-h1">Receivers</h1>
 
         <div className="filterTab">
-          {/* Choose Category: Dropdown
-          Choose Brand:  Dropdown
-          Search Product: Search bar */}
-          {/* Row component creates a margin */}
-          <Form.Row>
-            <Col>
-              <DropdownButton id="dropdown-basic-button" title="Choose Brand">
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </DropdownButton>
-            </Col>
-            <div className="col-3">
-              <InputGroup className="mb-3">
-                <InputGroup.Prepend>
-                  <Button variant="outline-secondary"> Search Product</Button>
-                </InputGroup.Prepend>
-                <FormControl aria-describedby="basic-addon1" />
-              </InputGroup>
-            </div>
-          </Form.Row>
+          <InputGroup className="mb-3">
+            <FormControl
+              placeholder="Search..."
+              aria-label="Search..."
+              aria-describedby="basic-addon2"
+            />
+            <InputGroup.Append>
+              <Button variant="outline-secondary">Search</Button>
+            </InputGroup.Append>
+          </InputGroup>
         </div>
+<br/>
+<br/>
+<br/>
 
-        <Form.Row>
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={MC1011} />
-              <Card.Body>
-                <Card.Title>MultiCode 1011 Receiver Kit</Card.Title>
-                <Card.Text>
-                  MultiCode 1011 One Remote 308911 and One Receiver 109020 Set
-                  -- $69.00
-                </Card.Text>
-                <Form.Row>
-                  <Col>
-                    <Button variant="primary" size="sm">
-                      View More
-                    </Button>
-                  </Col>
-                  <Col>
-                    <Button variant="primary" size="sm">
-                      Add to Cart
-                    </Button>
-                  </Col>
-                </Form.Row>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={MC2022} />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Form.Row>
-                  <Col>
-                    <Button variant="primary" size="sm">
-                      View More
-                    </Button>
-                  </Col>
-                  <Col>
-                    <Button variant="primary" size="sm">
-                      Add to Cart
-                    </Button>
-                  </Col>
-                </Form.Row>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={MC302210} />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Form.Row>
-                  <Col>
-                    <Button variant="primary" size="sm">
-                      View More
-                    </Button>
-                  </Col>
-                  <Col>
-                    <Button variant="primary" size="sm">
-                      Add to Cart
-                    </Button>
-                  </Col>
-                </Form.Row>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={MC309013} />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Form.Row>
-                  <Col>
-                    <Button variant="primary" size="sm">
-                      View More
-                    </Button>
-                  </Col>
-                  <Col>
-                    <Button variant="primary" size="sm">
-                      Add to Cart
-                    </Button>
-                  </Col>
-                </Form.Row>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Form.Row>
+        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+          <Form.Row className="tabMargin">
+            <Col sm={2}>
+              <Nav variant="pills" className="flex-column">
+                <Nav.Item>
+                  <Nav.Link eventKey="first">Multi-Code</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="second">Liftmaster</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="third">Doorking</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="fourth">Linear</Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </Col>
+            <Col sm={10}>
+              <Tab.Content>
+                <Tab.Pane eventKey="first">
+                  <MultiCode />
+                </Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Liftmaster />
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  <Doorking />
+                </Tab.Pane>
+                <Tab.Pane eventKey="fourth">
+                  <Linear />
+                </Tab.Pane>
+              </Tab.Content>
+            </Col>
+          </Form.Row>
+        </Tab.Container>
       </div>
     );
   }

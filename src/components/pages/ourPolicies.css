@@ -8,13 +8,15 @@ body{
 #tabs{
     text-align: justify;
 }
+
 .ourP-h1{
-    color:rgb(54, 231, 54);
-}
+    color:black;
+    text-shadow: 2px 3px 5px grey;
+  }
+
 #mailBtn{
    float: right;
 }
-
 
 #mySidenav a {
     position: absolute;
@@ -35,3 +37,15 @@ body{
     
     background-color: #2196F3;
   }
+
+  .cargo-slide1{
+    width:800px;
+    height:400px;
+  }
+
+.labelShadow{
+  text-shadow: 2px -2px 5px gray;
+}
+.tab-content{
+  padding-top: 15px;
+}
