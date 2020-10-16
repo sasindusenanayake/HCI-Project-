@@ -4,23 +4,17 @@ import './App.css';
 import Footer from'./components/footer/footer';
 import Header from './components/Header/header'
 import Driveaway from './components/pages/driveawaygates'
-import Receivers from './components/pages/receivers'
-import Moderndriveaway from './components/pages/moderngates'
-import Cart from './components/pages/cart'
-import FAQ from './components/pages/faq'
-import OurPolicies from './components/pages/ourPolicies'
-
-
-
-
-
 import Sasindu from './components/pages/test'
 import Mpage from './components/pages/mpage'
 import Aboutus from './components/pages/aboutus'
 import Dapp from './components/pages/dealersapplication'
-import Home from './components/pages/homegate'
 
+import OurPolicies from './components/pages/ourPolicies'
+import FAQ from './components/pages/faq'
+import Receivers from './components/pages/receivers'
 
+import Moderndriveaway from './components/pages/moderngates'
+import Cart from './components/pages/cart'
 import Contact from './components/pages/contactus'
 import Rcontrol from './components/pages/RemoteControls'
 import Manufactures from './components/pages/Manufactures'
@@ -39,16 +33,18 @@ function App() {
     <Header></Header>
       <Router>
         <Switch>
+
+        <Route path="/aboutus"><Aboutus></Aboutus></Route>
+      
+        <Route path="/dealersapplication"><Dapp></Dapp></Route>
+          <Route path="/test"><Sasindu></Sasindu></Route>
+          <Route path="/mpage"><Mpage></Mpage></Route>
+          <Route path="/drivawaygates"><Driveaway> </Driveaway></Route> 
+           
           <Route path="/receivers"><Receivers></Receivers></Route>
           <Route path="/faq"><FAQ></FAQ></Route>
           <Route path="/ourPolicies"><OurPolicies></OurPolicies></Route>
 
-        <Route path="/aboutus"><Aboutus></Aboutus></Route>
-        <Route path="/homegate"><Home></Home></Route>
-        <Route path="/dealersapplication"><Dapp></Dapp></Route>
-          <Route path="/test"><Sasindu></Sasindu></Route>
-          <Route path="/mpage"><Mpage></Mpage></Route>
-          
           <Route path="/gates"></Route>
 
           <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
