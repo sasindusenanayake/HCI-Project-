@@ -43,8 +43,10 @@ export default class header extends Component {
                     Gates Equipments
                   </a>
                   <ul className="dropdown-menu main-menubox" aria-labelledby="navbarDropdownMenuLink">
+                    
+                    <li><a className="dropdown-item" href="/receivers">Recievers</a></li>  
                     <li><a className="dropdown-item" href="/Remotecontrols">Remote Controlls</a></li>
-                    <li><a className="dropdown-item" href="#">Recievers</a></li>  
+                     
                     <li><a className="dropdown-item" href="#">Telephone</a></li>       
                   </ul>
                 </li>

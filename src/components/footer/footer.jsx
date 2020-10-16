@@ -19,7 +19,7 @@ export default class footer extends Component {
                     <li><a href="Manufactures">Manufactures</a></li>
                     <li><a href="#">Forms</a></li>
                     <li><a href="#">News and Updates</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                   </ul>
                 </div>
               </div>
@@ -31,8 +31,8 @@ export default class footer extends Component {
                     <li><a href="#">Website Tutorial</a></li>
                     <li><a href="#">Accessibility</a></li>
                     <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="/ourPolicies">Our Policies</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                     <li><a href="#">Webmaster</a></li>
                   </ul>
                 </div>
