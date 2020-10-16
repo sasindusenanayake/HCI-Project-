@@ -13,12 +13,14 @@ export default class header extends Component {
               <h2 />
               <img src={require('../../asserts/logo.png')} width="120px" />
             </a>
+            <h1 style={{paddingLeft: 90, color:'gray' }}>GATES N FENCES</h1>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
+                  
                   <a className="nav-link" href="/homegate">Home <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item dropdown main-menu">

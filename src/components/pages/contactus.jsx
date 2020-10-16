@@ -206,7 +206,7 @@ export default class contactus extends Component {
 
                         
 
-                        <button className="btncontact" type="button" onclick="validation();">Contact</button>
+                        <button className="btncontact" type="submit" onclick="validation();">Contact</button>
 
             
                     </form>
