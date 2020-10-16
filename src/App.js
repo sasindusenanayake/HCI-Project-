@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Footer from'./components/footer/footer';
 import Header from './components/Header/header'
@@ -47,7 +47,7 @@ function App() {
 
           <Route path="/gates"></Route>
 
-          <Route path="/drivawaygates"><Driveaway></Driveaway></Route>
+          
           <Route path="/cart"><Cart></Cart></Route>
           <Route path="/contactus"><Contact></Contact></Route>
           <Route path="/RemoteControls"><Rcontrol></Rcontrol></Route>
