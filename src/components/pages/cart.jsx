@@ -10,7 +10,7 @@ export default class cart extends Component {
             <div>
                 <div class="jumbotron jumbotron-fluid">
                   <div class="container">
-                    <h1 class="display-4">Items In Your Shopping Cart</h1>
+                    <h1 class="display-4" style={{color: "black"}}>Items In Your Shopping Cart</h1>
                     <p class="lead">Attention Hawaii, Puerto Rico, Virigin Islands, and Canada Customers. Please Call In your Order To Reduce Shipping Charges</p>
                   </div>
                 </div>

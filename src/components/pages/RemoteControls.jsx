@@ -8,7 +8,7 @@ export default class RemoteControls extends Component {
             <div className="container" >
                 <div className="row">
                     <div className="col">
-                        <h1>Remote Controls</h1>
+                        <h1 style={{color: "white"}}>Remote Controls</h1>
                         <Rcards></Rcards>
                     </div>
 

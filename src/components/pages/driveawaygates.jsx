@@ -13,7 +13,7 @@ export default class driveawaygates extends Component {
                     </div>
                     <div className="col-md-6 text-white" style={{padding: '40px', maxWidth: '600px'}}>
                     <h2 style={{marginTop: '0px'}}>Driveaway Gates</h2>
-                    <p>In this page you will find one of the largest Wrought Iron Fence and Gate Result selection in the net. A great selection of Security Gates, Safety Gates,
+                    <p style={{textAlign:'justify'}}>In this page you will find one of the largest Wrought Iron Fence and Gate Result selection in the net. A great selection of Security Gates, Safety Gates,
                     specializing in Front Gates, Driveway Gates, known as the Gate World at your finger tips. We have most brands of Automatic Electric Driveway Gate
                     Openers, brand name like Elite, Power Master, Eagle, and others, with many Door Gate Operating Devices. All the Driveway Metal Gates can be made of
                     Wrought Iron or Aluminum, the Aluminum Driveway Gates are lighter and painted through a powder coat process which is oven baked, and is superior in
