@@ -19,7 +19,7 @@ export default class header extends Component {
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+                  <a className="nav-link" href="/homegate">Home <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item dropdown main-menu">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

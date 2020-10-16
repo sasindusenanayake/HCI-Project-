@@ -1,5 +1,6 @@
 import React from 'react';
 
+import logo from './logo.svg';
 import './App.css';
 import Footer from'./components/footer/footer';
 import Header from './components/Header/header'
@@ -45,6 +46,9 @@ function App() {
           <Route path="/faq"><FAQ></FAQ></Route>
           <Route path="/ourPolicies"><OurPolicies></OurPolicies></Route>
 
+          <Route path="/gates"></Route>
+
+          
           <Route path="/gates"></Route>
 
           
